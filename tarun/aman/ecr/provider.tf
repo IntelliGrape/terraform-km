@@ -7,9 +7,9 @@ terraform {
   }
 }
 
+# Configure the AWS Provider
 provider "aws" {
+  profile = "ttn"
   region = "us-east-1"
-  
 }
-
 

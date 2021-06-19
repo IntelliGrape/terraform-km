@@ -1,4 +1,9 @@
+#################
+# Provider Info #
+#################
+
 terraform {
+  required_version = "> 0.13.0"
   required_providers {
     aws = {
       source  = "hashicorp/aws"
@@ -8,8 +13,6 @@ terraform {
 }
 
 provider "aws" {
-  region = "us-east-1"
-  
+  region  = "us-east-1"
+  profile = "tf-km"
 }
-
-

@@ -10,7 +10,7 @@ variable "name" {
 variable "image_tag_mutability" {
   
    type = string
-   describtion = "image tag"
+   description = "image tag"
    default = "MUTABLE"
 }
 

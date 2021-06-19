@@ -1,8 +1,6 @@
-resource "aws_ecr_repository" "ecr_repo" {
-  name                 = "tf-km-test-repo-chhavi"
-  image_tag_mutability = "MUTABLE"
+module "ECR" {
+        source = "./modules/ecr/"
+        ecr_repo_name = var.ecr_repo_name
 
-  image_scanning_configuration {
-    scan_on_push = true
-  }
 }
+

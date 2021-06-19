@@ -1,5 +1,5 @@
 resource "aws_ecr_repository" "foo" {
-  name                 = "devops-session"
+  name                 = "terraform-km-harikesh-squad-shivangi"
   image_tag_mutability = "MUTABLE"
 
   image_scanning_configuration {

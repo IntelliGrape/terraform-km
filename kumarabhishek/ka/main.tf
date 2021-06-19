@@ -1,8 +1,4 @@
-resource "aws_ecr_repository" "ecr_repo" {
-  name                 = "terraformkumar"
-  image_tag_mutability = "MUTABLE"
-
-  image_scanning_configuration {
-    scan_on_push = true
-  }
+module "ECR" {
+  source        = "./modules/ECR/"
+  ecr_repo_name = var.ecr_repo_name
 }

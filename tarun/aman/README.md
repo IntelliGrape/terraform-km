@@ -1,1 +1,2 @@
-# Aman Jhagrolia Workspace
+# AWS ECR
+# Create a ECR Repository

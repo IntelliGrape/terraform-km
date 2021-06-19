@@ -1,8 +1,9 @@
-resource "aws_ecr_repository" "ecr_repo" {
-  name                 = "terraform-spartans-squad-km"
-  image_tag_mutability = "MUTABLE"
+
+resource "aws_ecr_repository" "ecr" {
+  name                 = var.name
+  image_tag_mutability = "IMMUTABLE"
 
   image_scanning_configuration {
-    scan_on_push = true
+    scan_on_push = var.scan_status
   }
 }

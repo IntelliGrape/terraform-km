@@ -1,4 +1,4 @@
-resource "aws_ecr_repo" "this" {
+resource "aws_ecr_repository" "this" {
   name = var.name
   image_tag_mutability = var.image_tag_mutability
   image_scanning_configuration {

@@ -1,5 +1,5 @@
-resource "aws_ecr_repository" "foo" {
-  name                 = "myrepo"
+resource "aws_ecr_repository" "Nitin" {
+  name                 = "nitin"
   image_tag_mutability = "MUTABLE"
 
   image_scanning_configuration {

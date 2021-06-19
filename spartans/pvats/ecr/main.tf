@@ -1,11 +1,4 @@
-terraform {
-  required_version = ">= 0.14.7"
-}
-provider "aws" {
-  default_tags {
-    tags = var.tags
-  }
-}
+
 resource "aws_ecr_repository" "ecr" {
   name                 = var.name
   image_tag_mutability = "IMMUTABLE"

@@ -15,3 +15,8 @@ variable "tags" {
     Environment = "dev"
   }
 }
+
+variable "region" {
+  description = "AWS Region in which you are working"
+  default     = "us-east-1"
+}

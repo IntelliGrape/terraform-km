@@ -8,6 +8,6 @@ terraform {
 }
 
 provider "aws" {
-  region = "ap-south-1"
-  profile  = "mine"
+  region = "us-east-1"
+  profile  = "terraform-km"
 }

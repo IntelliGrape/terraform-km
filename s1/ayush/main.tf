@@ -1,8 +1,5 @@
-resource "aws_ecr_repository" "ecr_repo" {
-  name                 = "terraform-ayush-tripathi-km"
-  image_tag_mutability = "MUTABLE"
-
-  image_scanning_configuration {
-    scan_on_push = true
-  }
+module "ecr" {
+    source = "./module/ecr"
+    ecr_name = "terraform-s1-ayush-tripathi"
+    tag_name = "MUTABLE"
 }

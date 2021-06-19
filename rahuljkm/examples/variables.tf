@@ -3,4 +3,3 @@ variable "repo_name" {
   type = string
   default = "terraform-km-rahul"
 }
-}

@@ -1,5 +1,5 @@
 resource "aws_ecr_repository" "ecr_repo" {
-  name                 = "terraform-Akash-km"
+  name                 = "terraform-Akshay-km"
   image_tag_mutability = "MUTABLE"
 
   image_scanning_configuration {

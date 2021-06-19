@@ -5,4 +5,3 @@ variable "repo_name" {
 variable "repo_tags" {
     type = map
 }
-

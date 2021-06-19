@@ -9,4 +9,3 @@ variable "repo_tags" {
     Owner = "Stuti"
   }
 }
-

@@ -10,6 +10,5 @@ terraform {
 }
 
 provider "aws" {
-  profile = "kss"
   region  = "us-east-1"
 }

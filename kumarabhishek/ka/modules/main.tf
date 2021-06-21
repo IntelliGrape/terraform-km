@@ -1,8 +1,15 @@
-resource "aws_ecr_repository" "ecr_repo" {
-  name                 = var.ecr_repo_name
-  image_tag_mutability = "MUTABLE"
-
+resource "aws_ecr_repository" "testingkumar" {
+  count                = length(var.repo_names)
+  name                 = element(var.repo_names, count.index)
+  image_tag_mutability = var.image_tag_mutability
   image_scanning_configuration {
-    scan_on_push = true
+    scan_on_push = var.scan_on_push
   }
+
+  tags = merge(
+    {
+      "Name" = "${element(var.repo_names, count.index)}"
+    },
+    var.tags
+  )
 }

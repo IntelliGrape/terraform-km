@@ -1,4 +1,5 @@
-module "ECR" {
-  source        = "./modules/ECR/"
-  ecr_repo_name = var.ecr_repo_name
+module "ecr" {
+  source     = "./modules/"
+  repo_names = var.ecr_repo_names
+  tags       = local.resource_tags
 }

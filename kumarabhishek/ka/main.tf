@@ -1,8 +1,5 @@
-resource "aws_ecr_repository" "ecr_repo" {
-  name                 = "terraform-tarun-squad-km"
-  image_tag_mutability = "MUTABLE"
-
-  image_scanning_configuration {
-    scan_on_push = true
-  }
+module "ecr" {
+  source     = "./modules/"
+  repo_names = var.ecr_repo_names
+  tags       = local.resource_tags
 }

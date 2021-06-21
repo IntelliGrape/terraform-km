@@ -1,4 +1,8 @@
-variable "ecr_repo_name" {
-  description = "ECR-Repo Name"
-  default     = "kumar-ecr-test-tf-repo"
+variable "project_name" {
+  type = string
+}
+
+variable "ecr_repo_names" {
+  description = "List of ECR Repo Names"
+  type        = list(string)
 }

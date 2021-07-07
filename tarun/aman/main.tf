@@ -1,3 +1,4 @@
+/*
 // Terraform S3 Backend for Remote State Management
 terraform {
   backend "s3" {
@@ -7,7 +8,7 @@ terraform {
     dynamodb_table = "table_name"
   }
 }
-
+*/
 // Importing VPC Module
 module "vpc_module" {
   source = "./modules/vpc/"

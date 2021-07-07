@@ -8,8 +8,10 @@ terraform {
   }
 }
 
-// AWS Provider Configuration
-provider "aws" {
-  profile = "default"
-  region  = "region-name"
+// Getting VPC Data
+data "aws_vpc" "default" {
+  filter {
+    name = "isDefault"
+    values = ["true"]
+  }
 }
